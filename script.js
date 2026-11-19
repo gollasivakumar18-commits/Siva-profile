@@ -1,56 +1,95 @@
 
+// NAVBAR SCROLL EFFECT
+const navbar = document.getElementById("mainNavbar");
+
+window.addEventListener("scroll", function () {
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+});
+
 // TYPING ANIMATION
 const typingElement = document.getElementById("typing");
 
-const words = [
-    "B.Tech Student",
-    "PHP Developer",
+const roles = [
+    "Part-Time Web Developer",
     "Laravel Developer",
-    "Web Developer"
+    "PHP Developer",
+    "Web Application Developer"
 ];
 
-let wordIndex = 0;
+let roleIndex = 0;
 let charIndex = 0;
 let deleting = false;
 
 function typeEffect() {
-    const currentWord = words[wordIndex];
+    const currentRole = roles[roleIndex];
 
-    if (deleting) {
-        charIndex--;
-    } else {
+    if (!deleting) {
+        typingElement.textContent = currentRole.substring(0, charIndex + 1);
         charIndex++;
+
+        if (charIndex === currentRole.length) {
+            deleting = true;
+            setTimeout(typeEffect, 1500);
+            return;
+        }
+    } else {
+        typingElement.textContent = currentRole.substring(0, charIndex - 1);
+        charIndex--;
+
+        if (charIndex === 0) {
+            deleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+        }
     }
 
-    typingElement.textContent = currentWord.substring(0, charIndex);
-
-    let speed = deleting ? 60 : 110;
-
-    if (!deleting && charIndex === currentWord.length) {
-        deleting = true;
-        speed = 1500;
-    } else if (deleting && charIndex === 0) {
-        deleting = false;
-        wordIndex = (wordIndex + 1) % words.length;
-        speed = 400;
-    }
-
-    setTimeout(typeEffect, speed);
+    setTimeout(typeEffect, deleting ? 45 : 90);
 }
 
 typeEffect();
 
+// CURRENT YEAR
+document.getElementById("year").textContent = new Date().getFullYear();
 
-// AUTOMATIC COPYRIGHT YEAR
-document.getElementById("year").textContent =
-    new Date().getFullYear();
+// SCROLL REVEAL
+const revealElements = document.querySelectorAll(".reveal");
 
+if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.12
+    });
 
-// CONTACT FORM
+    revealElements.forEach(function (element) {
+        observer.observe(element);
+    });
+} else {
+    revealElements.forEach(function (element) {
+        element.classList.add("show");
+    });
+}
+
+// CLOSE MOBILE MENU AFTER CLICK
+document.querySelectorAll(".navbar-nav .nav-link, .nav-contact").forEach(function (link) {
+    link.addEventListener("click", function () {
+        const menu = document.getElementById("navbarMenu");
+
+        if (menu.classList.contains("show")) {
+            bootstrap.Collapse.getOrCreateInstance(menu).hide();
+        }
+    });
+});
+
+// CONTACT FORM - OPENS USER'S EMAIL APPLICATION
 const contactForm = document.getElementById("contactForm");
+const formStatus = document.getElementById("formStatus");
 
-contactForm.addEventListener("submit", function(event) {
-
+contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
     const name = document.getElementById("name").value.trim();
@@ -58,48 +97,24 @@ contactForm.addEventListener("submit", function(event) {
     const subject = document.getElementById("subject").value.trim();
     const message = document.getElementById("message").value.trim();
 
-    const formStatus = document.getElementById("formStatus");
-
     if (!name || !email || !subject || !message) {
         formStatus.textContent = "Please fill in all fields.";
         return;
     }
 
-    // Replace with your actual email address
-    const receiverEmail = "yourmail@gmail.com";
+    const receiver = "yourmail@gmail.com";
 
-    const emailBody =
-        "Name: " + name + "\n" +
-        "Email: " + email + "\n\n" +
-        "Message: " + message;
+    const mailSubject = encodeURIComponent(subject);
+    const mailBody = encodeURIComponent(
+        "Name: " + name +
+        "\nEmail: " + email +
+        "\n\nMessage:\n" + message
+    );
 
-    const mailtoLink =
-        "mailto:" + receiverEmail +
-        "?subject=" + encodeURIComponent(subject) +
-        "&body=" + encodeURIComponent(emailBody);
+    formStatus.textContent = "Opening your email application...";
 
-    formStatus.textContent =
-        "Opening your email application...";
-
-    window.location.href = mailtoLink;
-});
-
-
-// MOBILE NAVBAR AUTO CLOSE
-const navLinks = document.querySelectorAll(".nav-link");
-
-const navbarMenu = document.getElementById("navbarMenu");
-
-navLinks.forEach(function(link) {
-
-    link.addEventListener("click", function() {
-
-        if (navbarMenu.classList.contains("show")) {
-
-            bootstrap.Collapse.getOrCreateInstance(navbarMenu).hide();
-
-        }
-
-    });
-
+    window.location.href =
+        "mailto:" + receiver +
+        "?subject=" + mailSubject +
+        "&body=" + mailBody;
 });
