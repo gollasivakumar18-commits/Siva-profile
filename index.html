@@ -5,291 +5,253 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Golla Sivakumar | Full Stack Web Developer</title>
-    <meta name="description" content="Portfolio of Golla Sivakumar, B.Tech student and part-time web developer specializing in PHP, Laravel, JavaScript and MySQL.">
+    <title>Golla Sivakumar | Portfolio</title>
+    <meta name="description" content="Golla Sivakumar - B.Tech student and part-time web developer.">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#home">siva<span>.</span></a>
+        <a class="navbar-brand" href="#home">Siva<span>.</span></a>
 
         <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarMenu"
-                aria-controls="navbarMenu" aria-expanded="false"
-                aria-label="Toggle navigation">
-            <i class="bi bi-list"></i>
+                data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarMenu">
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto align-items-lg-center">
                 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Journey</a></li>
+                <li class="nav-item"><a class="nav-link" href="#journey">Journey</a></li>
                 <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                <li class="nav-item ms-lg-3">
-                    <a href="#contact" class="nav-contact">Let's Talk <i class="bi bi-arrow-up-right"></i></a>
-                </li>
+                <li class="nav-item"><a class="nav-link contact-btn" href="#contact">Contact Me</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero-section" id="home">
-    <div class="hero-glow"></div>
-
+<!-- Hero Section -->
+<section id="home" class="hero-section">
     <div class="container">
-        <div class="row align-items-center gy-5">
+        <div class="row align-items-center">
 
-            <div class="col-lg-7">
-                <div class="availability">
-                    <span class="availability-dot"></span>
-                    Available for freelance opportunities
-                </div>
+            <div class="col-lg-7 hero-content">
+                <p class="welcome-text">WELCOME TO MY PORTFOLIO</p>
 
-                <p class="hero-intro">HELLO, I'M GOLLA SIVAKUMAR</p>
+                <h1>Hi, I'm <span>Golla Sivakumar</span></h1>
 
-                <h1>
-                    Building digital<br>
-                    experiences that<br>
-                    <span class="gradient-text">make an impact.</span>
-                </h1>
-
-                <h2 class="hero-role">
-                    Student <span>&</span> <span id="typing"></span>
-                </h2>
+                <h2>I'm a <span id="typing-text"></span></h2>
 
                 <p class="hero-description">
-                    I'm a B.Tech student and part-time web developer
-                    passionate about creating modern websites,
-                    powerful web applications and practical digital solutions.
+                    B.Tech student and part-time web developer.
+                    I enjoy creating modern, responsive and user-friendly
+                    websites using Laravel and modern web technologies.
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn-main">
-                        Explore My Work <i class="bi bi-arrow-up-right"></i>
-                    </a>
-                    <a href="#contact" class="btn-secondary">
-                        Get In Touch <i class="bi bi-chat-dots"></i>
-                    </a>
+                    <a href="#projects" class="btn primary-btn">Explore My Work</a>
+                    <a href="#contact" class="btn outline-btn">Let's Talk</a>
                 </div>
 
-                <div class="hero-socials">
-                    <span>FOLLOW ME</span>
-                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
-                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                    <a href="mailto:yourmail@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+                <div class="social-links">
+                    <a href="https://github.com/" target="_blank" aria-label="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="mailto:yourmail@gmail.com" aria-label="Email">
+                        <i class="bi bi-envelope"></i>
+                    </a>
                 </div>
             </div>
 
-            <div class="col-lg-5">
-                <div class="hero-visual">
-                    <div class="visual-circle"></div>
-
-                    <div class="profile-frame">
+            <div class="col-lg-5 text-center">
+                <div class="profile-wrapper">
+                    <div class="profile-circle">
                         <img src="images/profile.png" alt="Golla Sivakumar">
                     </div>
-
-                    <div class="floating-card card-top">
+                    <div class="floating-card">
                         <i class="bi bi-code-slash"></i>
-                        <div>
-                            <strong>Developer</strong>
-                            <small>Building solutions</small>
-                        </div>
+                        <span>Web Developer</span>
                     </div>
-
-                    <div class="floating-card card-bottom">
-                        <i class="bi bi-lightning-charge-fill"></i>
-                        <div>
-                            <strong>Always Learning</strong>
-                            <small>Growing every day</small>
-                        </div>
-                    </div>
-
-                    <div class="visual-caption">DESIGN. DEVELOP. DEPLOY.</div>
                 </div>
             </div>
 
         </div>
     </div>
-
-    <div class="hero-bottom-line">
-        <span>SCROLL TO EXPLORE</span>
-        <i class="bi bi-arrow-down"></i>
-    </div>
 </section>
 
-<!-- TECH STACK STRIP -->
-<section class="tech-strip">
+<!-- About Section -->
+<section id="about" class="section-padding">
     <div class="container">
-        <div class="tech-strip-inner">
-            <span>PHP</span>
-            <span>Laravel</span>
-            <span>JavaScript</span>
-            <span>MySQL</span>
-            <span>Bootstrap</span>
-            <span>HTML & CSS</span>
-        </div>
-    </div>
-</section>
 
-<!-- ABOUT -->
-<section class="section-padding" id="about">
-    <div class="container">
-        <div class="section-heading reveal">
-            <span class="section-tag">01 / ABOUT ME</span>
-            <h2>More than just<br><span>writing code.</span></h2>
+        <div class="section-heading">
+            <p>GET TO KNOW ME</p>
+            <h2>About <span>Me</span></h2>
         </div>
 
-        <div class="row gy-4 align-items-center">
-            <div class="col-lg-5 reveal">
-                <div class="about-visual">
-                    <div class="about-icon"><i class="bi bi-person-workspace"></i></div>
-                    <h3>Student by day.<br>Developer by passion.</h3>
-                    <p>Learning technology. Creating solutions. Building my future.</p>
-                    <div class="about-decoration">SIVA.DEV</div>
+        <div class="row align-items-center">
+            <div class="col-lg-5 mb-4">
+                <div class="about-card">
+                    <i class="bi bi-person-workspace"></i>
+                    <h3>Student & Developer</h3>
+                    <p>Learning, building and improving every day.</p>
                 </div>
             </div>
 
-            <div class="col-lg-7 reveal">
-                <p class="about-lead">
-                    I'm <span class="highlight">Golla Sivakumar</span>,
-                    a B.Tech student and part-time web developer from India.
+            <div class="col-lg-7">
+                <h3 class="about-title">Building Ideas Into Digital Experiences</h3>
+
+                <p class="section-description">
+                    I'm Golla Sivakumar, a B.Tech student at
+                    Dr. M.G.R. Educational and Research Institute, Chennai.
+                    Along with my studies, I work as a part-time web developer.
                 </p>
 
-                <p class="body-text">
-                    I enjoy turning ideas into functional and user-friendly
-                    web applications. My development journey started with
-                    frontend technologies and gradually expanded into
-                    backend development using PHP and Laravel.
-                </p>
-
-                <p class="body-text">
-                    I have hands-on experience working on real-world website
-                    projects, database operations, API development and
-                    application features. I continuously improve my skills
-                    by learning and building practical solutions.
+                <p class="section-description">
+                    I have practical experience in HTML, CSS, Bootstrap,
+                    PHP and Laravel. I also work with JavaScript, Java
+                    and MySQL. I enjoy developing websites, building APIs
+                    and solving real-world programming problems.
                 </p>
 
                 <div class="about-details">
-                    <div><span>Name</span><strong>Golla Sivakumar</strong></div>
-                    <div><span>Education</span><strong>B.Tech – ECE-BA</strong></div>
-                    <div><span>College</span><strong>Dr. M.G.R. Educational and Research Institute</strong></div>
-                    <div><span>Location</span><strong>Chennai, India</strong></div>
-                    <div><span>Work</span><strong>Part-Time Web Developer</strong></div>
+                    <div><strong>Name:</strong> Golla Sivakumar</div>
+                    <div><strong>Education:</strong> B.Tech</div>
+                    <div><strong>Branch:</strong> ECE-BA</div>
+                    <div><strong>College:</strong> Dr. M.G.R. Educational and Research Institute</div>
+                    <div><strong>Role:</strong> Part-Time Web Developer</div>
+                    <div><strong>Location:</strong> Chennai, India</div>
                 </div>
+
+                <a href="#contact" class="btn primary-btn mt-3">Contact Me</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- SKILLS -->
-<section class="section-padding skills-section" id="skills">
+<!-- Technologies -->
+<section class="technology-section">
     <div class="container">
-        <div class="section-heading reveal">
-            <span class="section-tag">02 / MY EXPERTISE</span>
-            <h2>Technologies I <span>work with.</span></h2>
-            <p>Tools and technologies I use to turn ideas into reality.</p>
+        <p class="text-center technology-title">TECHNOLOGIES I WORK WITH</p>
+
+        <div class="technology-list">
+            <span><i class="bi bi-filetype-html"></i> HTML</span>
+            <span><i class="bi bi-filetype-css"></i> CSS</span>
+            <span><i class="bi bi-bootstrap"></i> Bootstrap</span>
+            <span><i class="bi bi-filetype-php"></i> PHP</span>
+            <span><i class="bi bi-database"></i> MySQL</span>
+            <span><i class="bi bi-code-slash"></i> Laravel</span>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section-padding">
+    <div class="container">
+
+        <div class="section-heading">
+            <p>MY TECHNICAL EXPERTISE</p>
+            <h2>My <span>Skills</span></h2>
         </div>
 
         <div class="row g-4">
 
-            <div class="col-md-6 col-lg-4 reveal">
+            <div class="col-md-6 col-lg-4">
                 <div class="skill-card">
-                    <div class="skill-icon"><i class="bi bi-filetype-html"></i></div>
-                    <h3>HTML5</h3>
-                    <p>Semantic markup and accessible web structure.</p>
-                    <span class="skill-level">Frontend</span>
+                    <i class="bi bi-filetype-html"></i>
+                    <h4>HTML5</h4>
+                    <p>Building structured and semantic web pages.</p>
+                    <div class="progress"><div class="progress-bar" style="width:95%"></div></div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 reveal">
+            <div class="col-md-6 col-lg-4">
                 <div class="skill-card">
-                    <div class="skill-icon"><i class="bi bi-palette"></i></div>
-                    <h3>CSS3</h3>
-                    <p>Responsive styling, layouts and animations.</p>
-                    <span class="skill-level">Frontend</span>
+                    <i class="bi bi-filetype-css"></i>
+                    <h4>CSS3</h4>
+                    <p>Styling responsive and attractive websites.</p>
+                    <div class="progress"><div class="progress-bar" style="width:75%"></div></div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 reveal">
+            <div class="col-md-6 col-lg-4">
                 <div class="skill-card">
-                    <div class="skill-icon"><i class="bi bi-bootstrap"></i></div>
-                    <h3>Bootstrap</h3>
-                    <p>Responsive layouts and reusable UI components.</p>
-                    <span class="skill-level">Frontend</span>
+                    <i class="bi bi-bootstrap"></i>
+                    <h4>Bootstrap</h4>
+                    <p>Creating responsive layouts and components.</p>
+                    <div class="progress"><div class="progress-bar" style="width:90%"></div></div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 reveal">
-                <div class="skill-card featured-skill">
-                    <div class="skill-icon"><i class="bi bi-filetype-php"></i></div>
-                    <h3>PHP</h3>
-                    <p>Server-side programming, validation and backend logic.</p>
-                    <span class="skill-level">Intermediate</span>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 reveal">
-                <div class="skill-card featured-skill">
-                    <div class="skill-icon"><i class="bi bi-box"></i></div>
-                    <h3>Laravel</h3>
-                    <p>REST APIs, CRUD operations, routing and authentication.</p>
-                    <span class="skill-level">Backend</span>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 reveal">
+            <div class="col-md-6 col-lg-4">
                 <div class="skill-card">
-                    <div class="skill-icon"><i class="bi bi-database"></i></div>
-                    <h3>MySQL</h3>
-                    <p>SQL queries, relationships and database management.</p>
-                    <span class="skill-level">Database</span>
+                    <i class="bi bi-filetype-php"></i>
+                    <h4>PHP</h4>
+                    <p>Server-side programming and backend development.</p>
+                    <div class="progress"><div class="progress-bar" style="width:70%"></div></div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 reveal">
+            <div class="col-md-6 col-lg-4">
                 <div class="skill-card">
-                    <div class="skill-icon"><i class="bi bi-filetype-js"></i></div>
-                    <h3>JavaScript</h3>
-                    <p>DOM manipulation and interactive functionality.</p>
-                    <span class="skill-level">Intermediate</span>
+                    <i class="bi bi-code-slash"></i>
+                    <h4>Laravel</h4>
+                    <p>Developing web applications and REST APIs.</p>
+                    <div class="progress"><div class="progress-bar" style="width:75%"></div></div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 reveal">
+            <div class="col-md-6 col-lg-4">
                 <div class="skill-card">
-                    <div class="skill-icon"><i class="bi bi-cup-hot"></i></div>
-                    <h3>Java</h3>
-                    <p>Programming fundamentals and problem solving.</p>
-                    <span class="skill-level">Programming</span>
+                    <i class="bi bi-database"></i>
+                    <h4>MySQL</h4>
+                    <p>Database design, queries and data management.</p>
+                    <div class="progress"><div class="progress-bar" style="width:75%"></div></div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 reveal">
+            <div class="col-md-6 col-lg-4">
                 <div class="skill-card">
-                    <div class="skill-icon"><i class="bi bi-git"></i></div>
-                    <h3>Git & GitHub</h3>
-                    <p>Version control and source code management.</p>
-                    <span class="skill-level">Development Tools</span>
+                    <i class="bi bi-filetype-js"></i>
+                    <h4>JavaScript</h4>
+                    <p>Adding dynamic functionality to websites.</p>
+                    <div class="progress"><div class="progress-bar" style="width:65%"></div></div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-card">
+                    <i class="bi bi-cup-hot"></i>
+                    <h4>Java</h4>
+                    <p>Learning object-oriented programming concepts.</p>
+                    <div class="progress"><div class="progress-bar" style="width:55%"></div></div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-card">
+                    <i class="bi bi-git"></i>
+                    <h4>Git & GitHub</h4>
+                    <p>Version control and project management.</p>
+                    <div class="progress"><div class="progress-bar" style="width:70%"></div></div>
                 </div>
             </div>
 
@@ -297,45 +259,50 @@
     </div>
 </section>
 
-<!-- JOURNEY -->
-<section class="section-padding" id="experience">
+<!-- Journey Section -->
+<section id="journey" class="section-padding journey-section">
     <div class="container">
-        <div class="section-heading reveal">
-            <span class="section-tag">03 / MY JOURNEY</span>
-            <h2>Learning today.<br><span>Building tomorrow.</span></h2>
+
+        <div class="section-heading">
+            <p>MY EXPERIENCE</p>
+            <h2>My <span>Journey</span></h2>
         </div>
 
         <div class="timeline">
 
-            <div class="timeline-item reveal">
+            <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="timeline-date">CURRENTLY</span>
-                    <h3>B.Tech – ECE-BA</h3>
-                    <h5>Dr. M.G.R. Educational and Research Institute</h5>
-                    <p>Currently pursuing my third year of undergraduate education.</p>
+                    <span>Education</span>
+                    <h4>B.Tech - ECE-BA</h4>
+                    <p>Dr. M.G.R. Educational and Research Institute, Chennai.</p>
                 </div>
             </div>
 
-            <div class="timeline-item reveal">
+            <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="timeline-date">PRACTICAL DEVELOPMENT</span>
-                    <h3>Part-Time Web Developer</h3>
-                    <h5>Website & Application Development</h5>
-                    <p>Working on web development tasks, Laravel applications,
-                       backend features and database operations.</p>
+                    <span>Web Development</span>
+                    <h4>Frontend Development</h4>
+                    <p>Learned HTML, CSS, Bootstrap and responsive website development.</p>
                 </div>
             </div>
 
-            <div class="timeline-item reveal">
+            <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="timeline-date">CONTINUOUS LEARNING</span>
-                    <h3>Full-Stack Development</h3>
-                    <h5>PHP · Laravel · MySQL · JavaScript</h5>
-                    <p>Building practical projects and improving my frontend
-                       and backend development knowledge.</p>
+                    <span>Backend Development</span>
+                    <h4>PHP & Laravel</h4>
+                    <p>Worked on backend applications, database operations and API development.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span>Professional Experience</span>
+                    <h4>Part-Time Web Developer</h4>
+                    <p>Working on practical web development projects and improving technical skills.</p>
                 </div>
             </div>
 
@@ -343,76 +310,79 @@
     </div>
 </section>
 
-<!-- PROJECTS -->
-<section class="section-padding projects-section" id="projects">
+<!-- Projects Section -->
+<section id="projects" class="section-padding">
     <div class="container">
-        <div class="section-heading reveal">
-            <span class="section-tag">04 / SELECTED WORK</span>
-            <h2>Things I've <span>built.</span></h2>
-            <p>A selection of projects and practical development work.</p>
+
+        <div class="section-heading">
+            <p>MY RECENT WORK</p>
+            <h2>My <span>Projects</span></h2>
         </div>
 
         <div class="row g-4">
 
-            <div class="col-md-6 col-lg-4 reveal">
+            <div class="col-md-6 col-lg-4">
                 <div class="project-card">
-                    <div class="project-preview preview-one">
+                    <div class="project-icon">
                         <i class="bi bi-gem"></i>
-                        <span>01</span>
                     </div>
                     <div class="project-content">
-                        <div class="project-category">LARAVEL · MYSQL</div>
-                        <h3>Jewellery Website</h3>
-                        <p>A jewellery web application featuring product
-                           information and gold and silver rate functionality.</p>
+                        <span class="project-category">E-Commerce</span>
+                        <h4>Jewellery Website</h4>
+                        <p>
+                            A jewellery website with product displays,
+                            registration, admin management and database integration.
+                        </p>
                         <div class="project-tags">
-                            <span>PHP</span><span>Laravel</span><span>MySQL</span>
+                            <span>Laravel</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
                         </div>
-                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-link">
-                            Project Details <i class="bi bi-arrow-up-right"></i>
-                        </a>
+                        <a href="#contact" class="project-link">Know More <i class="bi bi-arrow-up-right"></i></a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 reveal">
+            <div class="col-md-6 col-lg-4">
                 <div class="project-card">
-                    <div class="project-preview preview-two">
+                    <div class="project-icon">
                         <i class="bi bi-calendar-check"></i>
-                        <span>02</span>
                     </div>
                     <div class="project-content">
-                        <div class="project-category">PHP · LARAVEL</div>
-                        <h3>Appointment Booking</h3>
-                        <p>An appointment management application with
-                           booking workflows and online payment integration.</p>
+                        <span class="project-category">Web Application</span>
+                        <h4>Appointment Booking</h4>
+                        <p>
+                            An appointment booking application with
+                            booking management and payment integration.
+                        </p>
                         <div class="project-tags">
-                            <span>Laravel</span><span>PHP</span><span>Payment</span>
+                            <span>Laravel</span>
+                            <span>Bootstrap</span>
+                            <span>MySQL</span>
                         </div>
-                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-link">
-                            Project Details <i class="bi bi-arrow-up-right"></i>
-                        </a>
+                        <a href="#contact" class="project-link">Know More <i class="bi bi-arrow-up-right"></i></a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 reveal">
+            <div class="col-md-6 col-lg-4">
                 <div class="project-card">
-                    <div class="project-preview preview-three">
-                        <i class="bi bi-code-square"></i>
-                        <span>03</span>
+                    <div class="project-icon">
+                        <i class="bi bi-braces"></i>
                     </div>
                     <div class="project-content">
-                        <div class="project-category">REST API · BACKEND</div>
-                        <h3>Laravel API Development</h3>
-                        <p>Backend API development involving user
-                           registration, authentication and CRUD operations.</p>
+                        <span class="project-category">Backend Development</span>
+                        <h4>Laravel API Development</h4>
+                        <p>
+                            REST API development with database operations,
+                            validation, authentication and CRUD functionality.
+                        </p>
                         <div class="project-tags">
-                            <span>Laravel</span><span>REST API</span><span>MySQL</span>
+                            <span>Laravel</span>
+                            <span>PHP</span>
+                            <span>Postman</span>
                         </div>
-                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-link">
-                            Project Details <i class="bi bi-arrow-up-right"></i>
-                        </a>
+                        <a href="#contact" class="project-link">Know More <i class="bi bi-arrow-up-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -421,79 +391,85 @@
     </div>
 </section>
 
-<!-- CONTACT -->
-<section class="section-padding contact-section" id="contact">
+<!-- Contact Section -->
+<section id="contact" class="section-padding contact-section">
     <div class="container">
-        <div class="contact-box reveal">
-            <div class="row gy-5 align-items-center">
-                <div class="col-lg-6">
-                    <span class="section-tag">05 / GET IN TOUCH</span>
-                    <h2>Have an idea?<br><span>Let's build it.</span></h2>
-                    <p>
-                        Looking for a developer, collaboration or a freelance
-                        opportunity? Let's connect and create something useful.
-                    </p>
 
-                    <a href="mailto:yourmail@gmail.com" class="contact-email">
-                        <i class="bi bi-envelope"></i> yourmail@gmail.com
-                    </a>
+        <div class="section-heading">
+            <p>GET IN TOUCH</p>
+            <h2>Contact <span>Me</span></h2>
+        </div>
 
-                    <div class="contact-socials">
-                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
-                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+        <div class="row g-5">
+
+            <div class="col-lg-5">
+                <h3>Let's work together!</h3>
+                <p class="section-description">
+                    Have a project idea or an opportunity?
+                    Feel free to contact me. Let's build something great together.
+                </p>
+
+                <div class="contact-info">
+                    <div>
+                        <i class="bi bi-envelope"></i>
+                        <span>yourmail@gmail.com</span>
+                    </div>
+                    <div>
+                        <i class="bi bi-geo-alt"></i>
+                        <span>Chennai, India</span>
+                    </div>
+                    <div>
+                        <i class="bi bi-code-slash"></i>
+                        <span>Part-Time Web Developer</span>
                     </div>
                 </div>
-
-                <div class="col-lg-6">
-                    <form id="contactForm">
-                        <div class="mb-3">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" class="form-control" placeholder="What is it about?" required>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="message">Message</label>
-                            <textarea id="message" class="form-control" rows="4" placeholder="Tell me about your idea..." required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn-main w-100">
-                            Send Message <i class="bi bi-send"></i>
-                        </button>
-                        <p id="formStatus" class="form-status" aria-live="polite"></p>
-                    </form>
-                </div>
             </div>
+
+            <div class="col-lg-7">
+                <form id="contactForm" class="contact-form">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+
+                    <input type="text" id="subject" placeholder="Subject" required>
+
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
+                    <button type="submit" class="btn primary-btn">
+                        Send Message <i class="bi bi-send"></i>
+                    </button>
+                </form>
+            </div>
+
         </div>
     </div>
 </section>
 
-<!-- FOOTER -->
+<!-- Footer -->
 <footer class="footer">
-    <div class="container">
-        <div class="row gy-3 align-items-center">
-            <div class="col-md-6">
-                <a href="#home" class="footer-logo">siva<span>.</span></a>
-                <p>Designed & developed by Golla Sivakumar.</p>
-            </div>
-            <div class="col-md-6 text-md-end">
-                <p>© <span id="year"></span> All rights reserved.</p>
-                <a href="#home" class="back-top"><i class="bi bi-arrow-up"></i> Back to top</a>
-            </div>
+    <div class="container text-center">
+        <a class="footer-logo" href="#home">Siva<span>.</span></a>
+        <p>Designed & Developed by Golla Sivakumar</p>
+        <p class="copyright">© <span id="year"></span> Sivakumar. All Rights Reserved.</p>
+
+        <div class="footer-social">
+            <a href="https://github.com/" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:yourmail@gmail.com"><i class="bi bi-envelope"></i></a>
         </div>
     </div>
 </footer>
 
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
 <script src="script.js"></script>
 
 </body>
